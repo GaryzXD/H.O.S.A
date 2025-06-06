@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>HOSA</title>
+  <link rel="stylesheet" href="styles/main.css" />
+  <link rel="stylesheet" href="styles/slider-section-fix.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@500&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header class="navbar">
+    <div class="logo">H.O.S.A</div>
+    <nav>
+      <ul>
+        
+        <li class="active">Home</li>
+        <li>About</li>
+        <li>Blog</li>
+        <li>Contact</li>
+
+      </ul>
+    </nav>
+    <div class="search-container">
+      <input type="text" class="search-input" placeholder="Search..." />
+      <button class="search-btn"><i class="fas fa-search"></i></button>
+    </div>
+  </header>
+  
+  <div class="slider-container">
+    <div class="slider">
+      <!-- Slide 1: Video -->
+      <div class="slide">
+        <video autoplay muted loop>
+          <source src="images/Slidshow 1.MOV" type="video/mp4" />
+          Your browser does not support the video tag.
+        </video>
+         <div class="slider-overlay">
+          <h1><span class="bold">GROW</span> <span class="thin">More</span></h1>
+          <button>Start Today</button>
+        </div>
+      </div>
+      <!-- Slide 2: Image -->
+      <div class="slide">
+        <video autoplay muted loop>
+        <source src="images/Slideshow 2.MOV" type = "video/mp4" />
+      </video>
+        <div class="slider-overlay">
+          <h1><span class="bold">LIFT</span> <span class="thin">Strong</span></h1>
+          <button>Join Now</button>
+        </div>
+      </div>
+      <!-- Slide 3: Image -->
+      <div class="slide">
+        <img src="images/gym photo 3.jpg" alt="Gym Image" />
+        <div class="slider-overlay">
+          <h1><span class="bold">INSPIRE</span> <span class="thin">Daily</span></h1>
+          <button>Get Started</button>
+        </div>
+      </div>
+    </div>
+    <!-- Minimalistic Arrows -->
+    <div class="nav prev">&#10094;</div>
+    <div class="nav next">&#10095;</div>
+  </div>
+
+  <section class="hero">
+    <div class="overlay"></div>
+    <div class="content">
+      <h1>H.O.S.A</h1>
+      <h2>ELEVATE YOUR BRAND</h2>
+      <p>Make an impact through dynamic and targeted marketing solutions.</p>
+      <button class="call-btn" onclick="callUs()">Call Us</button>
+    </div>
+  </section>
+  
+<section class="story-section">
+  <!-- Background image -->
+  <img src="images/background for about us.jpg" class="bg-img" alt="Background Image">
+
+  <!-- Foreground image with 90% opacity -->
+  <img src="images/black pur.jpg" class="overlay-img" alt="Overlay Image">
+
+  <!-- Overlay for content -->
+  <div class="story-overlay">
+    <div class="story-content">
+      <h1>Our Story</h1>
+      <p>Welcome to <strong>H.O.S.A</strong> - Our mission is simple yet powerful:<br>
+        <span class="highlight">Elevate Your Brand.</span>
+      </p>
+      <p>We are more than just a social media management agency — we are storytellers, trendsetters, and digital alchemists.<br>
+        At <strong>H.O.S.A</strong>, we transform ordinary online presence into captivating brand experiences. We believe that every brand has a voice, a vision &amp; a unique rhythm <span class="highlight">Our job is to amplify it.</span>
+      </p>
+      <p>With a refined focus on content creation and platform strategy, we orchestrate bold narratives that resonate across the digital landscape. From crafting scroll-stopping visuals to curating feeds that exude your brand identity, we don’t just manage —<br>
+        <span class="highlight">We Magnetize.</span>
+      </p>
+    </div>
+  </div>
+</section>
+
+
+  
+  <!-- What We Offer -->
+  <section class="offer">
+    <h2 class="offer-title">What we offer</h2>
+    <div class="offer-row reveal">
+      <div class="offer-icon"><i class="fas fa-check-circle"></i></div>
+      <div class="offer-content">
+        <h3>Branding</h3>
+        <p>We help build brands that speaks louder than words. We don’t just design logos—
+          <span class="highlight-red">we craft stories, identities,</span> and impressions that last., we turn ideas into unforgettable brands.</p>
+      </div>
+    </div>
+    <div class="offer-row reveal">
+      <div class="offer-icon"><i class="fas fa-check-circle"></i></div>
+      <div class="offer-content">
+        <h3>Growth Marketing</h3>
+        <p><span class="highlight-red">Be seen. Be heard. Be remembered.</span> We harness the power of SEO, social media, content marketing, and targeted campaigns to put your brand in front of the right eyes—every time.</p>
+      </div>
+    </div>
+    <div class="offer-row reveal">
+      <div class="offer-icon"><i class="fas fa-check-circle"></i></div>
+      <div class="offer-content">
+        <h3>Insights & Analytics</h3>
+        <p>Data is our secret weapon. We <span class="highlight-red">transform raw numbers</span> into smart strategies—tracking trends, decoding behavior, and revealing what drives your audience.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section class="contact">
+    <div class="contact-left">
+      <h2 style="color: #e50914;">Leave us a message and we'll get back to you.</h2>
+      <img src="images/gym photo 4.jpg" alt="Gym" />
+      <img src="images/gym photo.jpg" alt="Gym 2" />
+    </div>
+    <form class="contact-form">
+      <input type="text" placeholder="Name" />
+      <input type="email" placeholder="Email *" required />
+      <input type="text" placeholder="Subject" />
+      <textarea placeholder="Type your message here..."></textarea>
+      <button type="submit" class="red-button">Submit</button>
+      <p class="thank-you-msg" style="display: none; color: #e50914;">Thanks for submitting!</p>
+    </form>
+  </section>
+
+  <!-- Footer Section -->
+  <footer class="footer">
+    <div class="footer-container">
+      <div class="footer-column">
+        <h3>Call</h3>
+        <p>+91 9667698820<br />+91 9340407633</p>
+      </div>
+      <div class="footer-column">
+        <h3>Email</h3>
+        <p>thehosaofficial@gmail.com</p>
+      </div>
+      <div class="footer-column">
+        <h3>Follow</h3>
+        <div class="social-icons">
+          <i class="fab fa-instagram"></i>
+          <i class="fab fa-linkedin-in"></i>
+          <i class="fab fa-twitter"></i>
+          <i class="fab fa-facebook-f"></i>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <div class="copyright">
+    &copy; 2025 H.O.S.A. All rights reserved.
+  </div>
+  
+  
+  <script>
+  const slides = document.querySelectorAll('.slide');
+  let currentSlide = 0;
+
+  function showSlide(index) {
+    slides.forEach((slide, i) => {
+      slide.style.display = (i === index) ? 'flex' : 'none';
+    });
+  }
+
+  document.querySelector('.nav.prev').onclick = function() {
+    currentSlide = (currentSlide === 0) ? slides.length - 1 : currentSlide - 1;
+    showSlide(currentSlide);
+  };
+
+  document.querySelector('.nav.next').onclick = function() {
+    currentSlide = (currentSlide === slides.length - 1) ? 0 : currentSlide + 1;
+    showSlide(currentSlide);
+  };
+
+  showSlide(currentSlide);
+</script>
+
+<script>
+  // Reveal animation on scroll
+  function revealOnScroll() {
+    const reveals = document.querySelectorAll('.reveal');
+    const windowHeight = window.innerHeight;
+    reveals.forEach(function(reveal) {
+      const elementTop = reveal.getBoundingClientRect().top;
+      if (elementTop < windowHeight - 50) {
+        reveal.classList.add('visible');
+      } else {
+        reveal.classList.remove('visible');
+      }
+    });
+  }
+
+  window.addEventListener('scroll', revealOnScroll);
+  window.addEventListener('load', revealOnScroll);
+</script>
+
+<script src="scripts/main.js"></script>
+</body>
+</html>
